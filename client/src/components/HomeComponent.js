@@ -228,7 +228,7 @@ class Home extends Component {
         <div className='heading row row-content white-text'>
           <p>
             The first website to sell your old as well as new items with bidding
-            allowed, in IIT (ISM). You will find various categories of products
+            allowed, in IITM. You will find various categories of products
             here : Stationary, Electronic Gadgets, Bicycles, Books, Clothes,
             Sports, etc. You will see a list of featured products below, based
             upon the no. of views{' '}

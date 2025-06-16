@@ -437,37 +437,7 @@ class Main extends Component {
                       )}/>
                        <PrivateRoute exact path='/bid_history/:productId' component={HistoryWithId}
                 />
-                {/*             <PrivateRouteAdmin exact path='/logs' component={() => <Log
-                      bids={this.props.bids}
-                     />}
-                      />
-                         <PrivateRouteAdmin exact path='/list_students' component={() => <UserList
-                      users={this.props.users.users.filter((user)=>(!user.admin))}
-                      usersLoading={this.props.users.isLoading}
-                      usersErrMess={this.props.users.errMess}
-                     />}
-                      />
-                         <PrivateRouteAdmin exact path='/list_admins' component={() => <UserList
-                      users={this.props.users.users.filter((user)=>(user.admin))}
-                      usersLoading={this.props.users.isLoading}
-                      usersErrMess={this.props.users.errMess}
-                     />}
-                      />
-                       <PrivateRouteAdmin exact path='/bid' component={() => <Bid
-                      auth={this.props.auth}
-                      products={this.props.products.products}
-                      productsLoading={this.props.products.isLoading}
-                      productsErrMess={this.props.products.errMess}
-                      users={this.props.users.users}
-                      usersLoading={this.props.users.isLoading}
-                      usersErrMess={this.props.users.errMess}
-                      postBid={this.props.postBid}
-                       />} />
-                      <PrivateRouteAdmin exact path='/return' component={() => <Return
-                      bids={this.props.bids}
-                      auth={this.props.auth}
-                      freezeBid={this.props.freezeBid}
-                      />} />*/}
+                
                      <PrivateRouteCommon exact path="/favorites" component={() => <Favorites 
                      favorites={this.props.favorites}
                       deleteFavorite={this.props.deleteFavorite} 
@@ -475,15 +445,7 @@ class Main extends Component {
 
                     />
                       <Route path='/users/:userId' component={UserWithId}/>
-                      {/*<PrivateRouteAdmin path='/stats' component={() => <Stats
-                      bids={this.props.bids}
-                      products={this.props.products.products}
-                      productsLoading={this.props.products.isLoading}
-                      productsErrMess={this.props.products.errMess}
-                      users={this.props.users.users}
-                      usersLoading={this.props.users.isLoading}
-                      usersErrMess={this.props.users.errMess}
-                      />}/>*/}
+                      
                       <Redirect to="/home"/>
           </Switch>
         <Footer/>

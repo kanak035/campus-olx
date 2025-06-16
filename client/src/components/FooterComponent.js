@@ -10,7 +10,7 @@ class Footer extends Component {
 
 render(){
     return(
-                    <p className="footer" align="center">© Copyright 2019 Chirag Jain IIT (ISM) </p>
+                    <p className="footer" align="center">© Copyright 2025 Kanak Dhiman IITM </p>
           );
 }
 

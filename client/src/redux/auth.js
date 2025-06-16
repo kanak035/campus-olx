@@ -1,8 +1,6 @@
 import * as ActionTypes from './ActionTypes';
 
-// The auth reducer. The starting state sets authentication
-// based on a token being in local storage. In a real app,
-// we would also want a util to check if the token is expired.
+
 const Auth = (state = {
         isLoading: false,
         isAuthenticated: localStorage.getItem('token') ? true : false,
