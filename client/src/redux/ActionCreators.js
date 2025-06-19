@@ -186,13 +186,13 @@ firstname: firstname,
 lastname: lastname,
 room: room,
 email: email,
-block: block,
+// block: block,
 hostel: hostel,
 phone: phone,
-facebookProfile: facebookProfile,
-showfacebook: showfacebook,
-showphone: showphone,
-showroom: showroom
+// facebookProfile: facebookProfile,
+// showfacebook: showfacebook,
+// showphone: showphone,
+// showroom: showroom
   };
   const bearer = 'Bearer ' + localStorage.getItem('token');
   return fetch(baseUrl + 'users/' + _id, {

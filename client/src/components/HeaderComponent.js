@@ -214,7 +214,7 @@ class Header extends Component{
                      <ModalBody>
                         <Form onSubmit={this.handleLogin}>
                             <FormGroup>
-                                <Label htmlFor="username">Username</Label>
+                                <Label htmlFor="username">Collage ID</Label>
                                 <Input type="text" id="username" name="username"
                                     innerRef={(input) => this.username = input} />
                             </FormGroup>
@@ -239,18 +239,18 @@ class Header extends Component{
                                password: values.password,
                                email: values.email,
                                room: values.room,
-                               block: values.block,
+                            //    block: values.block,
                                hostel: values.hostel,
                                phone: values.phone,
-                               showroom: values.showroom,
-                               showfacebook: values.showfacebook,
-                               showphone: values.showphone,
-                               facebookProfile: values.facebookProfile,
+                            //    showroom: values.showroom,
+                            //    showfacebook: values.showfacebook,
+                            //    showphone: values.showphone,
+                            //    facebookProfile: values.facebookProfile,
                                firstname: values.firstname,
                                lastname: values.lastname });
                            }}>
                             <FormGroup>
-                                <Label htmlFor="username">Username</Label>
+                                <Label htmlFor="username">Collage ID</Label>
                                 <Control.text model=".username" id="username" name="username" 
                             className="form-control" placeholder="Username" validators={{required,minLength: minLength(3),maxLength:maxLength(20)}} />
                             <Errors className="text-danger" model=".username" show="touched" messages={{required: 'Required',
@@ -280,19 +280,19 @@ class Header extends Component{
                             <FormGroup>
                             <Label htmlFor="hostel">Hostel</Label>
                             <Control.select model=".hostel" id="hostel" className="form-control" defaultValue="Jasper">
-                              <option>Jasper</option> <option>Amber</option>
-                              <option>Topaz</option> <option>Sapphire</option>
-                              <option>Diamond</option> <option>Emerald</option>
-                              <option>Ruby</option> <option>Rosaline</option>
-                              <option>Opal</option>
+                              <option>IVH</option> <option>BH-4</option>
+                              <option>Girls Hostel</option> <option>Satpura</option>
+                              <option>BH-1</option> 
+                              <option>BH-2</option> 
+                              <option>BH-3</option>
                             </Control.select>
                             </FormGroup>
                             <FormGroup>
-                            <Label htmlFor="block">Block</Label>
+                            {/* <Label htmlFor="block">Block</Label>
                             <Control.select model=".block" id="block" className="form-control" defaultValue="A">
                               <option>A</option> <option>B</option>
                               <option>C</option> <option>D</option>
-                            </Control.select>
+                            </Control.select> */}
                             </FormGroup>
                             <FormGroup>    
                                  <Label htmlFor="room">Room No.</Label>
@@ -315,7 +315,7 @@ class Header extends Component{
                             <Errors className="text-danger" model=".phone" show="touched" messages={{required: 'Required',
                              minLength:' Should be a valid 10 digit no.',maxLength:' Donot write country code',isNumber: ' Must be a number'}}/>
                             </FormGroup>
-                            <FormGroup>    
+                            {/* <FormGroup>    
                             <Row>
                                 <Col md={12}>
                                  <Label htmlFor="facebookProfile">Facebook Profile Link (Optional)</Label>
@@ -357,7 +357,7 @@ class Header extends Component{
                             <Label check htmlFor="showfacebook"> Facebook Profile</Label>
                             </FormGroup>
                             </Col>
-                            </Row>
+                            </Row> */}
                             <br/>
                             <FormGroup>
                             <Button type="submit" value="submit" color="warning">Sign Up</Button>

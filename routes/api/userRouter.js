@@ -66,13 +66,13 @@ router.post('/signup',cors.corsWithOptions, (req, res, next) => {
     lastname : req.body.lastname,
     email : req.body.email,
     room : req.body.room,
-    block : req.body.block,
+    // block : req.body.block,
     hostel : req.body.hostel,
-    phone : req.body.phone,
-  facebookProfile : req.body.facebookProfile,
-  showfacebook : req.body.showfacebook,
-  showphone : req.body.showphone,
-  showroom : req.body.showroom }), 
+    phone : req.body.phone}),
+  // facebookProfile : req.body.facebookProfile,
+  // showfacebook : req.body.showfacebook,
+  // showphone : req.body.showphone,
+  // showroom : req.body.showroom }), 
     req.body.password, (err, user) => {
       if(err) {
         res.statusCode = 500;
