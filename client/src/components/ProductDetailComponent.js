@@ -269,7 +269,7 @@ class ProductDetail extends Component {
           id: i,
           altText: this.props.product.images[i].slice(22),
           src:
-            'https://click-ism-20.s3.ap-south-1.amazonaws.com/' +
+            'https://iiitm-marketplace.s3.eu-north-1.amazonaws.com/' +
             this.props.product.images[i].slice(22)
         });
       }

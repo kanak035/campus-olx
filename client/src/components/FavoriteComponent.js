@@ -20,18 +20,18 @@ function RenderMenuItem({ product, deleteFavorite }) {
         width='100%'
         height='200'
         src={
-          'https://click-ism-20.s3.ap-south-1.amazonaws.com/' +
+          'https://iiitm-marketplace.s3.eu-north-1.amazonaws.com/' +
           product.images[0].slice(22)
         }
         onMouseOver={e => {
           if (product.images[1])
             e.currentTarget.src =
-              'https://click-ism-20.s3.ap-south-1.amazonaws.com/' +
+              'https://iiitm-marketplace.s3.eu-north-1.amazonaws.com/' +
               product.images[1].slice(22);
         }}
         onMouseOut={e => {
           e.currentTarget.src =
-            'https://click-ism-20.s3.ap-south-1.amazonaws.com/' +
+            'https://iiitm-marketplace.s3.eu-north-1.amazonaws.com/' +
             product.images[0].slice(22);
         }}
       />

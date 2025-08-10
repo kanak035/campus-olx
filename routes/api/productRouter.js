@@ -13,7 +13,7 @@ var multer = require('multer');
 aws.config.update({
   secretAccessKey: process.env.AWSSecretKey,
   accessKeyId: process.env.AWSAccessKeyId,
-  region: 'ap-south-1'
+  region: 'eu-north-1'
 });
 
 var s3 = new aws.S3();
@@ -22,7 +22,7 @@ productRouter.use(bodyParser.json());
 
 var storage = multerS3({
   s3: s3,
-  bucket: 'click-ism-20',
+  bucket: 'iiitm-marketplace',
   metadata: function(req, file, cb) {
     cb(null, { fieldName: file.fieldname });
   },
